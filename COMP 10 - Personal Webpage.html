@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+  <meta name="description" content="Ashy's Personal Webpage">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Ashley Kaye W. Imus">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="30">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  padding: 10px;
+  background: #f7f2f6; /* soft pink-beige */
+  color: #444;
+}
+
+/* Header */
+.header {
+  padding: 40px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 4px 20px rgba(0,0,0,0.05);
+}
+
+.header h1 {
+  font-size: 50px;
+  color: #d48fb0; /* soft rose */
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 18px;
+  color: #777;
+}
+
+/* Navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #e7c7d7; /* muted pastel pink */
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.topnav a:hover {
+  background-color: #f3dbe7;
+  color: #6a4c57;
+}
+
+/* Layout */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image replacement */
+.softimg {
+  background-color: #f3e6ef;
+  width: 100%;
+  border-radius: 15px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #a77d96;
+  font-size: 18px;
+}
+
+/* Cards */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 20px rgba(0,0,0,0.05);
+}
+
+.card h2 {
+  color: #d48fb0;
+}
+
+.card h5 {
+  color: #8f7486;
+  font-weight: normal;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #e7c7d7;
+  color: white;
+  margin-top: 20px;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+.leftcolumn .softimg {
+  width: 10in;
+  height: 4in;
+  background-color: #f3e6ef;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.leftcolumn .softimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* makes the image cover the area nicely */
+  border-radius: 15px;
+}
+
+.interest-collage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 10px; /* space between images */
+  margin-top: 10px;
+}
+
+.interest-collage .softimg {
+  width: 100%; /* fills the grid cell */
+  height: 2in;  /* or whatever height you like */
+  background-color: #f3e6ef;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.interest-collage .softimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* makes it cover nicely */
+  border-radius: 15px;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1> Ashy’s Little Corner </h1>
+  <p> Welcome to my world ♡ </p>
+</div>
+
+<div class="topnav">
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Hobbies</a>
+  <a href="#">Gallery</a>
+  <a href="#" style="float:right">Other Socials</a>
+</div>
+
+<div class="row">
+  <!-- LEFT COLUMN -->
+  <div class="leftcolumn">
+
+    <div class="card">
+      <h2>About Me 🌸</h2>
+      <h5>Updated · November 27, 2025</h5>
+     <div class="softimg">
+  <img src="gradpic.png" alt="description 💗" style="width:100%; height:100%; object-fit:cover; border-radius:15px;">
+</div>
+
+      <p>Hi! I'm Ashy, short for Ashley. I've recently just taken my graduation picture; already graduating soon! </p>
+      <p>I enjoy baking, cooking, reading novels or mangas, and playing games. I may not be an academic weapon, but I can try to be one!</p>
+    </div>
+
+    <div class="card">
+      <h2>My Interests 🎀</h2>
+      <h5>Things that I enjoy doing</h5>
+     <div class="interest-collage">
+    <div class="softimg"><img src="baking.jpeg" alt="interest 1"></div>
+    <div class="softimg"><img src="painting.jpeg" alt="interest 2"></div>
+    <div class="softimg"><img src="music.jpeg" alt="interest 3"></div>
+    <div class="softimg"><img src="Buldak.jpeg" alt="interest 4"></div>
+    <div class="softimg"><img src="art museum.jpeg" alt="interest 5"></div>
+	<div class="softimg"><img src="gaming.jpeg" alt="interest 6"></div>
+
+  </div>
+</div>
+
+      
+    </div>
+
+  </div>
+
+  <!-- RIGHT COLUMN -->
+  <div class="rightcolumn">
+
+    <div class="card">
+      <h2>Recently Posted 💗</h2>
+      <div class="softimg">
+  <img src="playground.png" alt="description 💗" style="width:100%; height:100%; object-fit:cover; border-radius:15px;">
+</div>
+
+      <p> Went to the playground with my classmates, haha ♡ </p>
+    </div>
+
+    <div class="card">
+      <h3>Aesthetic Moodboard 🎀</h3>
+      <div class="softimg">
+  <img src="dog.jpeg" alt="dog 💗" style="width:100%; height:100%; object-fit:cover; border-radius:15px;">
+</div>
+
+      <br>
+      <div class="softimg">
+  <img src="donut.jpeg" alt="donut 💗" style="width:100%; height:100%; object-fit:cover; border-radius:15px;">
+</div>
+
+      <br>
+      <div class="softimg">
+  <img src="FLOWER.jpeg" alt="flowers 💗" style="width:100%; height:100%; object-fit:cover; border-radius:15px;">
+</div>
+ 
+    <div class="card">
+      <h3>Contact Me 🤍</h3>
+      <h5> Want to talk to me? Find me here 🌸</h5>
+	  <p> ☏ 099690184139 </p>
+	  <p> 🖂 imusashleykaye@gmail.com </p>
+	  <p> ⓕ Ashy Imus { @Ashley.Kaye.Imus } </p>
+	  
+    </div>
+
+  </div>
+</div>
+
+<div class="footer">
+  A Website featuring everything about Ashley Kaye W. Imus
+</div>
+
+</body>
+</html>
